@@ -27,11 +27,10 @@ def english_to_french(english_text):
     return french_text
 
 
-
 def french_to_english(french_text):
     #write the code here
 
-    transalation = language_translator.translate(text=french_text, model_id = "en-fr").get_result()
+    transalation = language_translator.translate(text=french_text, model_id = "fr-en").get_result()
     english_text = transalation['translations'][0]['translation']
 
     return english_text
